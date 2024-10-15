@@ -57,10 +57,16 @@ nav {
     z-index: 1000;
     position: fixed;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }
 
 .navov {
     flex-direction: row;
+    margin: 0;
+    width: 100%;
 }
 
 nav ul {
@@ -82,8 +88,24 @@ nav ul li a:hover {
     color: #f39c12;
 }
 
-.nav-buttons {
-    width: auto;
+.right-nav-buttons {
+    width: 7rem;
+    justify-self: center;
+}
+
+.logo-link {
+    width: 55px;
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+.logo-link:hover {
+    transform: scale(1.1);
+}
+
+.left-nav-buttons {
+    width: 55px;
+    justify-self: left;
 }
 
 .toggle-container {
