@@ -35,6 +35,7 @@ function getContentType(filePath) {
     js: 'text/javascript',
     png: 'image/png',
     jpg: 'image/jpeg',
+    vnd: 'image/vnd'
     // Add more mime types as needed
   };
   return mimeTypes[ext] || 'text/plain';
